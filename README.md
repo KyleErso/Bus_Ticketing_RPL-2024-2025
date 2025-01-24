@@ -29,8 +29,8 @@ Sistem ini dikembangkan sebagai tugas besar mata kuliah Rekayasa Perangkat Lunak
 **Database**:  
 [![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white)](https://www.mysql.com)
 
-**Lainnya**:  
-[![Midtrans](https://img.shields.io/badge/Midtrans-00B200?style=flat&logo=midtrans&logoColor=white)](https://midtrans.com) (Payment Gateway)
+**Payment Gateway**:  
+[![Midtrans](https://img.shields.io/badge/Midtrans-00B200?style=flat&logo=midtrans&logoColor=white)](https://midtrans.com) 
 
 ### 🛠 Instalasi
 1. **Clone repositori**:
@@ -43,12 +43,12 @@ git clone https://github.com/KyleErso/Bus_Ticketing_RPL-2024-2025.git
 composer install
 ```
 
-3. **Install dependensi frontend** (opsional, jika menggunakan npm):
+3. **Install dependensi frontend** :
 ```bash
 npm install && npm run dev
 ```
 
-4. **Buat file `.env` dengan konfigurasi berikut** (contoh):
+4. **Buat file `.env` dengan konfigurasi berikut**:
 ```env
 APP_NAME=BusTicketReservation
 APP_ENV=local
