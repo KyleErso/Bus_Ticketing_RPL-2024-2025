@@ -1,0 +1,169 @@
+// resources/scss/app.scss
+
+// Fonts
+@import url('https://fonts.bunny.net/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import 'bootstrap/scss/bootstrap';
+
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1579985081815-efd0d0729c23?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'); // Overlay hitam semi-transparan
+    background-size: cover; // Agar gambar menutupi seluruh latar belakang
+    background-position: center; // Pusatkan gambar
+    background-repeat: no-repeat; // Hindari pengulangan gambar
+    background-attachment: fixed; // Gambar tetap di tempat saat di-scroll
+    height: 100vh; // Pastikan body mengambil seluruh tinggi viewport
+    margin: 0; // Hilangkan margin default
+    padding: 0; // Hilangkan padding default
+    font-family: 'Nunito', sans-serif; // Gunakan font Nunito
+}
+
+// Custom CSS untuk Card Transparan
+/* Gaya untuk card pencarian */
+.card {
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+/* Gaya untuk tombol pencarian */
+.btn-primary {
+    background-color: #ff5a5f;
+    border-color: #ff5a5f;
+    font-weight: bold;
+}
+
+.btn-primary:hover {
+    background-color: #e04a50;
+    border-color: #e04a50;
+}
+
+/* Gaya untuk tab navigasi */
+.nav-tabs .nav-link {
+    color: #333;
+    font-weight: bold;
+}
+
+.nav-tabs .nav-link.active {
+    color: #ff5a5f;
+    border-bottom: 2px solid #ff5a5f;
+}
+
+// Variabel Warna
+$primary-color: #ff5a5f;
+$secondary-color: #333;
+$background-color: #f8f9fa;
+$text-color: #333;
+$badge-color: #28a745;
+
+// Card Styling
+.card {
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    margin-bottom: 20px;
+
+    // Card Header
+    .card-header {
+        padding: 15px;
+        background-color: $primary-color;
+        color: white;
+
+        .card-title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .card-title-text {
+                font-size: 1.2rem;
+                font-weight: bold;
+            }
+
+            .card-title-badge {
+                background-color: $badge-color;
+                padding: 5px 10px;
+                border-radius: 20px;
+                font-size: 0.9rem;
+                font-weight: bold;
+            }
+        }
+
+        .card-subtitle {
+            margin-top: 5px;
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.8);
+        }
+    }
+
+    // Card Body
+    .card-body {
+        padding: 15px;
+
+        .card-info {
+            margin-bottom: 15px;
+
+            .card-info-item {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 10px;
+
+                .card-info-label {
+                    font-weight: bold;
+                    color: $secondary-color;
+                }
+
+                .card-info-value {
+                    color: $text-color;
+                }
+            }
+        }
+
+        .card-price {
+            text-align: right;
+
+            .card-price-old {
+                text-decoration: line-through;
+                color: #999;
+                font-size: 0.9rem;
+            }
+
+            .card-price-new {
+                font-size: 1.2rem;
+                font-weight: bold;
+                color: $primary-color;
+            }
+        }
+    }
+
+    // Card Footer
+    .card-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+        background-color: $background-color;
+
+        .card-footer-text {
+            font-size: 0.9rem;
+            color: $text-color;
+        }
+
+        .card-footer-button {
+            background-color: $primary-color;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+
+            &:hover {
+                background-color: darken($primary-color, 10%);
+            }
+        }
+    }
+}
