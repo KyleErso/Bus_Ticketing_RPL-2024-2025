@@ -1,5 +1,3 @@
----
-
 # **Sistem Pemesanan Tiket Bus 🚌🎫**
 
 **Proyek Tugas Besar Mata Kuliah Rekayasa Perangkat Lunak**  
@@ -59,8 +57,8 @@ DB_CONNECTION=mysql
 DB_HOST=127.0.0.1
 DB_PORT=3306
 DB_DATABASE=tiket_bus
-DB_USERNAME= (SESUAIKAN DENGAN ... MASING-MASING)
-DB_PASSWORD= (SESUAIKAN DENGAN ... MASING-MASING)
+DB_USERNAME= (SESUAIKAN USERNAME)
+DB_PASSWORD= (SESUAIKAN PASSWORD)
 ```
 
 5. **Jalankan migrasi**:
